@@ -5,9 +5,9 @@ exports.syncHistoryWithStore = syncHistoryWithStore;
 
 // export { LOCATION_CHANGE, routerReducer } from './reducer'
 
-import { LOCATION_CHANGE, routerReducer } from './reducer';
-exports.LOCATION_CHANGE = LOCATION_CHANGE;
-exports.routerReducer = routerReducer;
+import * as reducer from './reducer';
+exports.LOCATION_CHANGE = reducer.LOCATION_CHANGE;
+exports.routerReducer = reducer.routerReducer;
 
 // export {
 //   CALL_HISTORY_METHOD,
