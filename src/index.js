@@ -1,11 +1,13 @@
-export syncHistoryWithStore from './sync'
+// export syncHistoryWithStore from './sync'
+
+import syncHistoryWithStore from './sync';
+exports.syncHistoryWithStore = syncHistoryWithStore;
 
 // export { LOCATION_CHANGE, routerReducer } from './reducer'
 
 import { LOCATION_CHANGE, routerReducer } from './reducer';
-
-module.exports = LOCATION_CHANGE;
-module.exports = routerReducer;
+exports.LOCATION_CHANGE = LOCATION_CHANGE;
+exports.routerReducer = routerReducer;
 
 // export {
 //   CALL_HISTORY_METHOD,
@@ -18,12 +20,10 @@ import {
   push, replace, go, goBack, goForward,
   routerActions
 } from './actions';
-
-
-module.exports = CALL_HISTORY_METHOD;
-module.exports = push;
-module.exports = replace;
-module.exports = go;
-module.exports = goBack;
-module.exports = goForward;
-module.exports = routerActions;
+exports.CALL_HISTORY_METHOD = CALL_HISTORY_METHOD;
+exports.push = push;
+exports.replace = replace;
+exports.go = go;
+exports.goBack = goBack;
+exports.goForward = goForward;
+exports.routerActions = routerActions;
